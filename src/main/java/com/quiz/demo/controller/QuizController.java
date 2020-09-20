@@ -3,9 +3,14 @@ package com.quiz.demo.controller;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.CrossOrigin;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.quiz.demo.model.ParticipantModel;
 import com.quiz.demo.model.QuestionModel;
 import com.quiz.demo.service.QuizService;
 
@@ -16,6 +21,7 @@ import com.quiz.demo.service.QuizService;
  *
  */
 @RestController
+@CrossOrigin(origins = "*")
 public class QuizController {
 	
 	@Autowired
@@ -26,10 +32,16 @@ public class QuizController {
 		return "Hi";
 	}
 	
-	@RequestMapping(value="/getAll")
+	@GetMapping(value="/getAll")
 	public List<QuestionModel> getAll() {
 		List<QuestionModel> qm = quizService.getAll();
 		return qm;
+	}
+	
+	@PostMapping("/insertParticipant")
+	public String insertParticipant(@RequestBody ParticipantModel participantModel) {
+		String s = quizService.insertParticipant(participantModel);
+		return participantModel.getParticipantName();
 	}
 
 }

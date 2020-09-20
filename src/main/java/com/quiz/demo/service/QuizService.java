@@ -4,6 +4,7 @@ import java.util.List;
 
 import org.springframework.stereotype.Service;
 
+import com.quiz.demo.model.ParticipantModel;
 import com.quiz.demo.model.QuestionModel;
 
 /**
@@ -21,5 +22,13 @@ public interface QuizService {
 	 * @return
 	 */
 	List<QuestionModel> getAll();
+
+	/**
+	 * insertParticipant is used to insert participant to attend the quiz.
+	 * 
+	 * @param participantModel
+	 * 			participant information.
+	 */
+	String insertParticipant(ParticipantModel participantModel);
 
 }

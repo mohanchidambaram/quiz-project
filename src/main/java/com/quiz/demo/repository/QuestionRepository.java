@@ -7,7 +7,7 @@ import com.quiz.demo.entity.QuestionEntity;
 
 
 /**
- * QuestionModel is the model class for the question entity.
+ * QuestionRepository is the repository interface to perform operation on question entity.
  * 
  * @author Mohan Chidambaram
  *
