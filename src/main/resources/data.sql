@@ -19,8 +19,8 @@ INSERT INTO question(question_id,question_main,question_sub,question_type) VALUE
   (6,6,0,'Famous Place','Region'),
   (7,6,1,'Bodhgaya','Baghelkhand'),
   (8,6,2,'Khajuraho','Baghelkhand'),
-  (8,6,3,'Nasik','Malwa'),
-  (8,6,4,'Tirupati','Rayalaseema');
+  (9,6,3,'Nasik','Malwa'),
+  (10,6,4,'Tirupati','Rayalaseema');
   
   INSERT INTO mc_question(mc_question_id,question_id,choice_1,choice_2,choice_3,choice_4,choice_5,choice_6,choice_7) VALUES
   (1,2,'Aadhaar Card can be used as a proof of citizenship or domicile','Once issued, Aadhaar number  can not be deactivited or ommitted by Issuing Authority', null,null,null,null,null),
