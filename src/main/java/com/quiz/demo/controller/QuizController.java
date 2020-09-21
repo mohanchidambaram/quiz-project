@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.quiz.demo.model.ParticipantModel;
 import com.quiz.demo.model.QuestionModel;
+import com.quiz.demo.model.QuizModel;
 import com.quiz.demo.service.QuizService;
 
 /**
@@ -33,15 +34,15 @@ public class QuizController {
 	}
 	
 	@GetMapping(value="/getAll")
-	public List<QuestionModel> getAll() {
-		List<QuestionModel> qm = quizService.getAll();
-		return qm;
+	public List<QuizModel> getAll() {
+		List<QuizModel> qml = quizService.getAllQuestions();
+		return qml;
 	}
 	
 	@PostMapping("/insertParticipant")
-	public String insertParticipant(@RequestBody ParticipantModel participantModel) {
+	public ParticipantModel insertParticipant(@RequestBody ParticipantModel participantModel) {
 		String s = quizService.insertParticipant(participantModel);
-		return participantModel.getParticipantName();
+		return participantModel;
 	}
 
 }

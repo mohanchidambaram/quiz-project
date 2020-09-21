@@ -14,4 +14,13 @@ import com.quiz.demo.entity.MCQuestionEntity;
 @Repository
 public interface MCQuestionRepository extends JpaRepository<MCQuestionEntity, Integer> {
 
+	/**
+	 * findByQuestionId is used to fetch the data based on question id.
+	 * 
+	 * @param questionId
+	 * 			question id to be fetched.
+	 * @return MCQuestionEntity
+	 */
+	MCQuestionEntity findByQuestionId(int questionId);
+
 }

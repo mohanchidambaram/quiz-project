@@ -5,7 +5,7 @@ import java.util.List;
 import org.springframework.stereotype.Service;
 
 import com.quiz.demo.model.ParticipantModel;
-import com.quiz.demo.model.QuestionModel;
+import com.quiz.demo.model.QuizModel;
 
 /**
  * QuizService is the interface for declaring quiz page logics.
@@ -17,11 +17,11 @@ import com.quiz.demo.model.QuestionModel;
 public interface QuizService {
 
 	/**
-	 * getAll is used to fetch all the questions from the question.
+	 * getAllQuestions is used to fetch all the questions from the question table.
 	 * 
-	 * @return
+	 * @return List<QuizModel>
 	 */
-	List<QuestionModel> getAll();
+	List<QuizModel> getAllQuestions();
 
 	/**
 	 * insertParticipant is used to insert participant to attend the quiz.

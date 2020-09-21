@@ -28,6 +28,8 @@ public class QuizModel {
 	
 	public String option4;
 	
+	public List<String> options;
+	
 	public int answer;
 	
 	public List<MatchQuestionModel> matchQuestionModelList;
@@ -200,6 +202,34 @@ public class QuizModel {
 	 */
 	public void setMcQuestionModel(MCQuestionModel mcQuestionModel) {
 		this.mcQuestionModel = mcQuestionModel;
+	}
+
+	/**
+	 * @return the options
+	 */
+	public List<String> getOptions() {
+		return options;
+	}
+
+	/**
+	 * @param options the options to set
+	 */
+	public void setOptions(List<String> options) {
+		this.options = options;
+	}
+
+	/**
+	 * @return the matchQuestionModelList
+	 */
+	public List<MatchQuestionModel> getMatchQuestionModelList() {
+		return matchQuestionModelList;
+	}
+
+	/**
+	 * @param matchQuestionModelList the matchQuestionModelList to set
+	 */
+	public void setMatchQuestionModelList(List<MatchQuestionModel> matchQuestionModelList) {
+		this.matchQuestionModelList = matchQuestionModelList;
 	}
 	
 	

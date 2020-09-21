@@ -14,4 +14,13 @@ import com.quiz.demo.entity.AnswerEntity;
 @Repository
 public interface AnswerRepository extends JpaRepository<AnswerEntity, Integer> {
 
+	/**
+	 * findByQuestionId is used to fetch the data based on question id.
+	 * 
+	 * @param questionId
+	 * 			question id to be fetched.
+	 * @return AnswerEntity
+	 */
+	AnswerEntity findByQuestionId(int questionId);
+
 }
