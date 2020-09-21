@@ -31,9 +31,9 @@ INSERT INTO question(question_id,question_main,question_sub,question_type) VALUE
   (2,2,'1 only','2 only','Both 1 and 2','Neither 1 nor 2',3),
   (3,3,'1 and 2','1 and 4','2 and 3','3 and 4',1),
   (4,4,'Social reforms','Educational reforms','Reforms in police administration','Constitutional reforms',1),
-  (5,5,'1, 3 and 4 only','2, 3 and 5 only','1 and 4 only','1, 2, 3, 4 and 5',4),
+  (5,5,'1, 3 and 4 only','2, 3 and 5 only','1 and 4 only','1, 2, 3, 4 and 5',2),
   (6,6,'1, 2 and 4','2, 3, 4 and 5','2 and 5 only','1, 3, 4 and 5',1),
   (7,7,'The Preamble','The Fundamental Rights','The Directive Principlesof State Policy','The Fudamental Duties ',3),
   (8,8,'Liberty of thought','Economic liberty','Liberty of expression','Liberty of belief',2),
-  (9,9,'Sumatra','Borneo','Java','Sri Lanka',4),
+  (9,9,'Sumatra','Borneo','Java','Sri Lanka',2),
   (10,10,'Bringing the small entrepreneurs into formal financial system','Providing loans to poor farmers for cultivating particular crops','Providing pensions to old and destitutes','Funding the voluntary organizations involved in promation of skill development and employment generation',1);
