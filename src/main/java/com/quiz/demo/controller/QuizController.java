@@ -28,11 +28,6 @@ public class QuizController {
 	@Autowired
 	private QuizService quizService;
 	
-	@RequestMapping(value="/")
-	public String index() {
-		return "Hi";
-	}
-	
 	@GetMapping(value="/getAll")
 	public List<QuizModel> getAll() {
 		List<QuizModel> qml = quizService.getAllQuestions();
